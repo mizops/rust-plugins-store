@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#root {
+    width: 100%;
+    height: 100%;
+}
+#AUTH-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AUTH-error-text {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+#AUTH-title {
+    padding-bottom: 40px;
+    text-align: center;
+}
+/* SUBMIT */
+#AUTH-submit {
+    width: 100%;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#AUTH-submit:disabled {
+    background: rgb(216, 141, 0);
+}
+#AUTH-submit:focus {
+    outline-color: rgb(173, 113, 0);
+}
+/* FORM */
+#AUTH-form {
+    width: 200px;
+}
+/* INPUTS */
+.AUTH-input-container > input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 30px;
+    font-size: 20px;
+}
+.AUTH-input-container > input:focus {
+    border-bottom: 2px solid blue;
+    outline: none;
+}
+.AUTH-input-container > input:disabled {
+    border-bottom: 2px solid gray;
+}
+/* LINKS */
+.socialAuth {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.socialAuth:hover {
+    transform: scale(1.1);
+    transition: transform .1s;
+}
+
+#social-icons-container {
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+#social-auth-label {
+    margin-top: 10px;
+}
